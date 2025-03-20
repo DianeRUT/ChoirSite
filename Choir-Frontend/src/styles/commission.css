@@ -6,16 +6,17 @@
 }
 
 /* Section Title */
-.section-title {
+.commission-title {
   font-size: 20px;
   font-style: italic;
   color: #c0803a; /* Orange underline color */
   display: inline-block;
   position: relative;
   margin-bottom: 30px;
+  margin-top: 80px;
 }
 
-.section-title::after {
+.commission-title::after {
   content: "";
   display: block;
   width: 100px;

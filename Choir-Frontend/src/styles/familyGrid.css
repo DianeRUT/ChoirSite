@@ -32,6 +32,9 @@
     gap: 1.2rem;
     justify-content: center;
     padding: 0 11rem;
+    margin-bottom: 50px;
+    flex-grow: 1;
+    z-index: 0;
   }
   
   /* Family Card */

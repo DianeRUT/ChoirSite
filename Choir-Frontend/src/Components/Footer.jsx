@@ -43,9 +43,7 @@ function Footer() {
         
 <div className='copyright'> <p>© <span className='underline'>Family of Singers</span>, All Rights Reserved</p>
 
-<div className='footer-arrow'>
-    <FaArrowUp />
-</div>
+
 
 </div>
 

@@ -4,6 +4,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import MainLayout from "./Layouts/MainLayout.jsx";
 import Home from "./Pages/homePage.jsx";
 import Schedule from "./Pages/Schedule.jsx";
+import CommissionGrid from "./Pages/Commission.jsx";
+import About from "./Pages/About.jsx";
 
 const App = () => {
   return (
@@ -12,6 +14,8 @@ const App = () => {
         <Route path="/" element={<MainLayout />}>
           <Route index element={<Home/>} />
           <Route path="schedule" element={<Schedule />} />
+          <Route path="about" element={<About />} />
+          <Route path="commissions" element={<CommissionGrid />} />
         </Route>
       </Routes>
     </Router>

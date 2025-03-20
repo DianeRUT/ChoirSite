@@ -19,7 +19,7 @@ const Schedule = () => {
 
       {/* Schedule Content */}
       <div className="schedule-content">
-        <div className="section-title">
+        <div className="section-heading">
           <hr className="title-line" />
           <h2>Our Schedule</h2>
           <hr className="title-line" />

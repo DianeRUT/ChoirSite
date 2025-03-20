@@ -1,5 +1,5 @@
 import React from "react";
-import "./styles/commission.CSS"; // Import CSS for styling
+import "../styles/commission.css"; // Import CSS for styling
 import { FaDrum } from "react-icons/fa6";; //import drums to be used later
 // import Luminosity from '/src/assets/LightHolder.png'
 import HolderOfLight from "/src/assets/HolderOfLight.jpg";
@@ -44,7 +44,7 @@ const commissionData = [
 const CommissionGrid = () => {
   return (
     <section className="commission-section">
-      <h2 className="section-title">
+      <h2 className="commission-title">
         <span>Our commissions</span>
       </h2>
       <div className="commission-grid">

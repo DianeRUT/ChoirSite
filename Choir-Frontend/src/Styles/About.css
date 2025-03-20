@@ -1,19 +1,14 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scrollbar-width: none;
 
-
-}
 
 .about-container{
 
- height: 90vh;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .about-content{
-    margin-top: 30px;
+    margin-top: 80px;
     margin-left: 44em;
 }
 
@@ -118,20 +113,5 @@
   
 }
 
-.about-arrow{
-  
-        color: rgb(255, 255, 255);
-        margin-left: 90em; 
-        padding: 10px;
-        background-color: rgba(255, 147, 0, 1);
-        width: 30px; 
-        height: 30px; 
-        display: flex; 
-        justify-content: center;
-        align-items: center; 
-        border-radius: 5px; 
-        margin-top: -25px;
-        margin-left: 77em;
-        
-    }
+
     

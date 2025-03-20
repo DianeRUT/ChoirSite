@@ -1,14 +1,11 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 .Footer-container{
     padding-top: 30px;
     background: rgba(30, 34, 45, 1);
     color:rgba(220, 220, 220, 1);
     height: 420px;
     margin-top: 30px;
+    position: relative;
+    z-index: 1;
 }
 .foooter-Links h4{
     font-size: 25px;
