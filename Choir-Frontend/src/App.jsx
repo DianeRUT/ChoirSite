@@ -6,6 +6,8 @@ import Home from "./Pages/homePage.jsx";
 import Schedule from "./Pages/Schedule.jsx";
 import CommissionGrid from "./Pages/Commission.jsx";
 import About from "./Pages/About.jsx";
+import Members from "./DashboardComponents/Members.jsx";
+import AddMembers from "./DashboardComponents/AddMembers.jsx";
 
 const App = () => {
   return (
@@ -16,7 +18,11 @@ const App = () => {
           <Route path="schedule" element={<Schedule />} />
           <Route path="about" element={<About />} />
           <Route path="commissions" element={<CommissionGrid />} />
+
+     
         </Route>
+        <Route path="members" element={<Members />} />
+        <Route path="Addmembers" element={<AddMembers />} />
       </Routes>
     </Router>
   );
