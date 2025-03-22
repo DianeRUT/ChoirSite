@@ -2,9 +2,9 @@ import React from "react";
 import "./dashboardStyles/members.css";
 
 const membersData = [
-    { name: "Jane Doe", role: "Soprano", age: 30, image: "/avatars/jane.jpg" },
-    { name: "John Smith", role: "Tenor", age: 35, image: "/avatars/john.jpg" },
-    { name: "Emily Davis", role: "Alto", age: 25, image: "/avatars/emily.jpg" },
+    { name: "Jane Doe", role: "Soprano", age: 30, image: "/src/assets/avatar2.avif" },
+    { name: "John Smith", role: "Tenor", age: 35, image: "/src/assets/avatar1.avif" },
+    { name: "Emily Davis", role: "Alto", age: 25, image: "/src/assets/man-wearing-round-eyeglasses-casual-t-shirt.jpg" },
     // { name: "Michael Johnson", role: "Bass", age: 40, image: "/avatars/michael.jpg" },
     // { name: "Sarah Miller", role: "Soprano", age: 28, image: "/avatars/sarah.jpg" },
     // { name: "David Brown", role: "Tenor", age: 45, image: "/avatars/david.jpg" },

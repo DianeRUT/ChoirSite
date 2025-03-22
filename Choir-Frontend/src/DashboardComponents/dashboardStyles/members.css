@@ -57,9 +57,9 @@
 }
 
 .avatar {
-    max-width: 3rem;
-    max-height: 3rem;
-    border-radius: 9999px;
+    max-width: 5%;
+    max-height: 45%;
+    border-radius: 15%;
     object-fit: cover;
     margin-right: 1rem;
 }
