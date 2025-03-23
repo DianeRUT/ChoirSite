@@ -37,7 +37,33 @@
     background-color: #e5e7eb;
     color: #1f2937;
 }
+
 .icon {
     font-size: 1.25rem; /* ~20px */
     margin-right: 0.75rem;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        max-width: 100%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        padding: 0.75rem 1rem;
+        min-height: auto;
+        border-right: none;
+        border-bottom: 0.0625rem solid #e5e7eb;
+    }
+
+    .sidebar a {
+        flex-direction: column;
+        gap: 0.25rem;
+        font-size: 0.875rem;
+        margin-bottom: 0;
+        padding: 0.5rem;
+    }
+
+    .icon {
+        margin-right: 0;
+    }
 }

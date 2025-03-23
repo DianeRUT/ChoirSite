@@ -54,6 +54,7 @@
     align-items: center;
     justify-content: space-between;
     margin-bottom: 1rem;
+    flex-wrap: wrap;
 }
 
 .card .avatar {
@@ -72,6 +73,7 @@
 .join-date {
     font-size: 0.875rem;
     color: #6b7280;
+    margin-top: 0.5rem;
 }
 
 /* Recent Media */
@@ -92,3 +94,28 @@
     font-weight: 500;
 }
 
+/* Responsive Enhancements */
+@media (max-width: 768px) {
+    .recent-member {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .recent-member > div {
+        margin-left: 0;
+        margin-top: 0.5rem;
+    }
+
+    .join-date {
+        margin-top: 0.25rem;
+        align-self: flex-start;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .media-grid {
+        grid-template-columns: 1fr;
+    }
+}
