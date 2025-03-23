@@ -6,7 +6,8 @@ import Home from "./Pages/homePage.jsx";
 import Schedule from "./Pages/Schedule.jsx";
 import CommissionGrid from "./Pages/Commission.jsx";
 import About from "./Pages/About.jsx";
-
+import Dashboard from "./DashboardComponents/dashboard.jsx";
+import CreateEvent from "./DashboardComponents/Event.jsx";
 const App = () => {
   return (
     <Router>
@@ -16,6 +17,10 @@ const App = () => {
           <Route path="schedule" element={<Schedule />} />
           <Route path="about" element={<About />} />
           <Route path="commissions" element={<CommissionGrid />} />
+        </Route>
+        <Route path="/dashboard" element={<Dashboard/>}>
+        <Route path="create-event" element={<CreateEvent />} />
+        
         </Route>
       </Routes>
     </Router>
