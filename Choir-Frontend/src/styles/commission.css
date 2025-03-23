@@ -38,9 +38,9 @@
 .commission-card {
   background: white;
   border-radius: 0.4rem;
-  padding: 20px;
-  width: 13rem;
-  height: 22vh;
+  padding: 1rem;
+  max-width: 13rem;
+  min-height: 22vh;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease-in-out;
   text-align: center;
@@ -81,4 +81,25 @@
 .icon-style{
     width: 2.79rem;
     height:4.8vh;
+}
+@media (max-width: 768px) {
+  .commission-grid {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 0 2rem;
+  }
+
+  .commission-card {
+    max-width: 100%;
+    min-height: auto;
+  }
+
+  .commission-title {
+    font-size: 1.1rem;
+    margin-top: 3rem;
+  }
+
+  .commission-description {
+    font-size: 0.85rem;
+  }
 }

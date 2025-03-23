@@ -1,133 +1,153 @@
-.Footer-container{
-    padding-top: 30px;
+.Footer-container {
+    padding-top: 1.875rem;
     background: rgba(30, 34, 45, 1);
-    color:rgba(220, 220, 220, 1);
-    height: 420px;
-    margin-top: 30px;
+    color: rgba(220, 220, 220, 1);
+    min-height: 26.25rem;
+    margin-top: 1.875rem;
     position: relative;
     z-index: 1;
 }
-.foooter-Links h4{
-    font-size: 25px;
-    color: rgba(255, 147, 0,1);
-    margin-left: 20px;
+
+.foooter-Links h4 {
+    font-size: 1.5625rem;
+    color: rgba(255, 147, 0, 1);
+    margin-left: 1.25rem;
     font-family: 'Dancing Script', cursive;
 }
 
-.foooter-Links ul{
-    margin-left: 20px;
+.foooter-Links ul {
+    margin-left: 1.25rem;
     list-style: none;
-    margin-top: 20px;
+    margin-top: 1.25rem;
     font-family: 'Poppins', sans-serif;
 }
 
-.foooter-Links ul li{
-    margin-top: 20px;
-    font-size: 15px;
-}
-.icon{
-    font-size: 12px;
-   color: rgba(102, 102, 102, 1);
+.foooter-Links ul li {
+    margin-top: 1.25rem;
+    font-size: 0.9375rem;
 }
 
-.footer-contact{
+.icon {
+    font-size: 0.75rem;
+    color: rgba(102, 102, 102, 1);
+}
+
+.footer-contact {
     margin-left: 47em;
     margin-top: -17.4em;
-   
 }
 
-.footer-contact ul{
+.footer-contact ul {
     list-style: none;
-    margin-top: -5px;
+    margin-top: -0.3125rem;
     font-family: 'Poppins', sans-serif;
-  
 }
 
-
-.footer-contact ul li{
-    margin-top: 23px;
-    font-size: 15px;
-   
+.footer-contact ul li {
+    margin-top: 1.4375rem;
+    font-size: 0.9375rem;
 }
 
-
-
-.foooter-Links{
-    margin-left: 100px;
+.foooter-Links {
+    margin-left: 6.25rem;
 }
 
-.footer-contact h4{
-    font-size: 25px;
-    color: rgba(255, 147, 0,1);
+.footer-contact h4 {
+    font-size: 1.5625rem;
+    color: rgba(255, 147, 0, 1);
     font-family: 'Dancing Script', cursive;
 }
 
-
 .footer-socials {
-    display: flex; 
-    justify-content: center; 
-    gap: 25px; 
-    margin-top: 70px; 
-    padding-bottom: 5px;
-    margin-left: -65px;
-    border-bottom: 0.3px solid rgb(52, 56, 66);
+    display: flex;
+    justify-content: center;
+    gap: 1.5625rem;
+    margin-top: 4.375rem;
+    padding-bottom: 0.3125rem;
+    margin-left: -4.0625rem;
+    border-bottom: 0.01875rem solid rgb(52, 56, 66);
 }
 
 .footer-socials .socials {
-    width: 40px;  
-    height: 40px; 
+    max-width: 2.5rem;
+    max-height: 2.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    border: 2px solid #000;
+    border: 0.125rem solid #000;
     background-color: white;
     color: black;
-    font-size: 20px;
+    font-size: 1.25rem;
     transition: all 0.3s ease;
+    border-color: white;
 }
-
 
 .footer-socials .socials:hover {
     background-color: black;
     color: white;
-    border-color: white;
+    border-color: black;
 }
 
-
-.copyright{
-    margin-top: 10px;
-    font-size: 13px;
+.copyright {
+    margin-top: 0.625rem;
+    font-size: 0.8125rem;
     font-family: 'Poppins', sans-serif;
-  
 }
-.underline{
-    display: inline-block; 
-    border-bottom: 0.2px solid rgb(202, 202, 202); 
-    padding-bottom: 1px; 
+
+.underline {
+    display: inline-block;
+    border-bottom: 0.0125rem solid rgb(202, 202, 202);
+    padding-bottom: 0.0625rem;
 }
 
 .footer-arrow {
     color: rgb(255, 255, 255);
-    margin-left: 90em; 
-    padding: 10px;
+    padding: 0.625rem;
     background-color: rgba(255, 147, 0, 1);
-    
-    /* Box Styling */
-    width: 30px; 
-    height: 30px; 
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    border-radius: 5px; 
-    margin-top: -22px;
+    max-width: 1.875rem;
+    max-height: 1.875rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.3125rem;
+    margin-top: -1.375rem;
     margin-left: 95em;
-    
 }
-.homeLink{
+
+.homeLink {
     text-decoration: none;
     color: white;
 }
-.homeLink:hover{
+
+.homeLink:hover {
     color: rgba(255, 147, 0, 1);
+}
+
+@media (max-width: 768px) {
+    .Footer-container {
+        padding: 1.25rem 1rem;
+        text-align: center;
+    }
+
+    .foooter-Links, .footer-contact {
+        margin: 0;
+    }
+
+    .footer-contact {
+        margin-top: 2rem;
+    }
+
+    .footer-socials {
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin-left: 0;
+        justify-content: center;
+    }
+
+    .footer-arrow {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 1.5rem;
+    }
 }
