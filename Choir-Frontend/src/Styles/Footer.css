@@ -124,3 +124,10 @@
     margin-left: 95em;
     
 }
+.homeLink{
+    text-decoration: none;
+    color: white;
+}
+.homeLink:hover{
+    color: rgba(255, 147, 0, 1);
+}

@@ -8,6 +8,7 @@ import { FaFacebookF } from 'react-icons/fa';
 import { FaYoutube } from 'react-icons/fa';
 import { FaInstagram } from 'react-icons/fa';
 import { FaArrowUp } from "react-icons/fa"; // FontAwesome
+import {Link} from "react-router-dom"
 
 function Footer() {
   return (
@@ -15,12 +16,20 @@ function Footer() {
  <div className='foooter-Links'>
     <h4>Family of singers</h4>
     <ul>
-        <li> <FaChevronRight className='icon'/>HOME</li>
+      <Link to='/' className='homeLink'>
+      <li> <FaChevronRight className='icon'/>HOME</li>
+      </Link>
+        <Link to='about' className='homeLink'>
         <li><FaChevronRight  className='icon'/>ABOUT US</li>
-        <li><FaChevronRight  className='icon'/>EVENTS</li>
+        </Link>
+        <Link to='commissions' className='homeLink'>
         <li><FaChevronRight  className='icon'/>COMISSION</li>
-        <li><FaChevronRight  className='icon'/>SUPPORT US</li>
+        </Link>
+        <Link to='schedule' className='homeLink'>
         <li><FaChevronRight  className='icon'/>OUR SCHEDULE</li>
+        </Link>
+        <li><FaChevronRight  className='icon'/>EVENTS</li>
+        <li><FaChevronRight  className='icon'/>SUPPORT US</li>
     </ul>
  </div>
   <div className='footer-contact'>
