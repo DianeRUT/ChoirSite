@@ -12,7 +12,6 @@ import CreateEvent from "./DashboardComponents/Event.jsx";
 import Members from "./DashboardComponents/Members.jsx";
 import AddMembers from "./DashboardComponents/AddMembers.jsx";
 
-
 const App = () => {
   return (
     <Router>
@@ -29,6 +28,7 @@ const App = () => {
         <Route path="members" element={<Members />} />
         <Route path="Addmembers" element={<AddMembers />} />
         </Route>
+        <Route path="dashboard" element={<Dashboard />} />
       </Routes>
     </Router>
   );
