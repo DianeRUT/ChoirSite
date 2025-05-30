@@ -1,5 +1,5 @@
 import React from "react";
-import "../Styles/commission.css"; // Import CSS for styling
+import "../styles/commission.css"; // Import CSS for styling
 import { FaDrum } from "react-icons/fa6";; //import drums to be used later
 // import Luminosity from '/src/assets/LightHolder.png'
 import HolderOfLight from "/src/assets/HolderOfLight.jpg";

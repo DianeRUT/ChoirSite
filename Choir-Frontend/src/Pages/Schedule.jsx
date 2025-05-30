@@ -1,5 +1,5 @@
 import React from 'react';
-import '../Styles/Schedule.css';
+import '../styles/Schedule.css';
 import { FaDrum, FaPeopleGroup} from "react-icons/fa6";
 // import familyIcon from '../assets/family-icon.png';
 // import technicalIcon from '../assets/technical-icon.png';

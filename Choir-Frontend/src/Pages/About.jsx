@@ -1,11 +1,11 @@
 import React from 'react';
-import '../Styles/About.css';
-import '../Styles/familyGrid.css'
+import '../styles/About.css';
+import '../styles/familyGrid.css'
 import C1 from '../assets/C1.jpg';
 import C2 from '../assets/C2.jpg';
 import C3 from '../assets/C3.jpg';
 import C4 from '../assets/C4.jpg';
-import { FaArrowUp } from 'react-icons/fa';
+import { FaArrowsUp } from 'react-icons/fa';
 
 // Family data (simulating database entries)
 const familyData = [
