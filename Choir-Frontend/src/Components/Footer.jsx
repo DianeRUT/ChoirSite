@@ -1,6 +1,6 @@
 import React from 'react'
 import { FaChevronRight, FaXTwitter } from "react-icons/fa6";
-import '../Styles/Footer.css'
+import '../styles/Footer.css'
 import { FaEnvelope } from 'react-icons/fa';
 import { FaPhone } from "react-icons/fa6";
 import { FaLocationDot } from "react-icons/fa6";
