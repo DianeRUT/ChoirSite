@@ -1,5 +1,5 @@
 import React from "react";
-import "./styles/FamilyGrid.css"; // Import CSS for styling
+import "../Styles/familyGrid.css"; // Import CSS for styling
 
 // Family data (simulating database entries)
 const familyData = [
