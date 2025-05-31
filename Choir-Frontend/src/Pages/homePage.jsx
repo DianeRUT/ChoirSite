@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/Hero.css';
+import '../styles/hero.css';
 import choirImage from '../assets/logo1.jpg'; // Circular image
 
 const Hero = () => {

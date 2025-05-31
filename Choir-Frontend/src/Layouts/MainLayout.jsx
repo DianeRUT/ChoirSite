@@ -3,7 +3,7 @@ import { Outlet, useLocation } from "react-router-dom";
 import Navbar from "../Components/Navbar.jsx";
 import Footer from "../Components/Footer.jsx";
 import { FaArrowDown, FaArrowUp } from "react-icons/fa";
-import "../styles/Hero.css";
+import "../styles/hero.css";
 
 const MainLayout = () => {
   const location = useLocation();
