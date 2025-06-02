@@ -8,20 +8,22 @@ import { FaFacebookF } from 'react-icons/fa';
 import { FaYoutube } from 'react-icons/fa';
 import { FaInstagram } from 'react-icons/fa';
 import { FaArrowUp } from "react-icons/fa"; // FontAwesome
+import { Link } from 'react-router-dom';
 
 function Footer() {
   return (
     <div className='Footer-container'>
  <div className='foooter-Links'>
     <h4>Family of singers</h4>
-    <ul>
-        <li> <FaChevronRight className='icon'/>HOME</li>
-        <li><FaChevronRight  className='icon'/>ABOUT US</li>
-        <li><FaChevronRight  className='icon'/>EVENTS</li>
-        <li><FaChevronRight  className='icon'/>COMISSION</li>
-        <li><FaChevronRight  className='icon'/>SUPPORT US</li>
-        <li><FaChevronRight  className='icon'/>OUR SCHEDULE</li>
-    </ul>
+   <ul>
+  <li><FaChevronRight className="icon" /> <Link to="/">HOME</Link></li>
+  <li><FaChevronRight className="icon" /> <Link to="/about">ABOUT US</Link></li>
+  <li><FaChevronRight className="icon" /> <Link to="/events">EVENTS</Link></li>
+  <li><FaChevronRight className="icon" /> <Link to="/schedule">OUR SCHEDULE</Link></li>
+  <li><FaChevronRight className="icon" /> <Link to="/commissions">COMMISSIONS</Link></li>
+  <li><FaChevronRight className="icon" /> <Link to="/support">SUPPORT US</Link></li>
+  
+</ul>
  </div>
   <div className='footer-contact'>
     <h4>Contact</h4>

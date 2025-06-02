@@ -9,7 +9,7 @@
 .commission-title {
   font-size: 20px;
   font-style: italic;
-  color: #c0803a; /* Orange underline color */
+  color: rgba(255, 147, 0, 1); /* Orange underline color */
   display: inline-block;
   position: relative;
   margin-bottom: 30px;
@@ -70,15 +70,15 @@
   font-size: 14px;
   color: #888;
 }
-.family-icon{
-    width: 2.79rem;
-    height:4.8vh;
+.family-icon {
+  width: 2.79rem;
+  height: 4.8vh;
 }
-.light-icon{
-    width: 2.79rem;
-    height:4.8vh;
+.light-icon {
+  width: 2.79rem;
+  height: 4.8vh;
 }
-.icon-style{
-    width: 2.79rem;
-    height:4.8vh;
+.icon-style {
+  width: 2.79rem;
+  height: 4.8vh;
 }
