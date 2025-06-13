@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import logo from '../assets/mainlogo.png';
 import '../styles/navbar.css';
 
 function Navbar() {
     const location = useLocation();
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [activeDropdown, setActiveDropdown] = useState(null);
 
     const getNavbarClass = () => {
         switch (location.pathname) {
@@ -21,28 +23,50 @@ function Navbar() {
         }
     };
 
+    const toggleMenu = () => {
+        setIsMenuOpen(!isMenuOpen);
+    };
+
+    const toggleDropdown = (index) => {
+        setActiveDropdown(activeDropdown === index ? null : index);
+    };
+
     return (
         <nav className={getNavbarClass()}>
-          <div className="navbar-container">
-            <div className="navbar-logo">
-              <img src={logo} alt="Logo" />
-            </div>
-            <ul className="navbar-links">
-                <li><Link to="/" id="home-link">Home</Link></li>
-                <li><Link to="/about">About Us</Link></li>
-                <div className="dropdown">
-                    <li><Link to="#" className="dropdown-toggle">Events</Link></li>
-                    <div className="dropdown-content">
-                        <li><Link to="#">Upcoming Events</Link></li>
-                        <li><Link to="#">Past Events</Link></li>
-                        <li><Link to="#">Special Programs</Link></li>
-                    </div>
+            <div className="navbar-container">
+                <div className="navbar-logo">
+                    <img src={logo} alt="Logo" />
                 </div>
-                <li><Link to="/schedule">Our Schedule</Link></li>
-                <li><Link to="/commissions">Commissions</Link></li>
-                <li><button className="support-btn">Support Us</button></li>
-            </ul>
-          </div>
+                <button className="mobile-menu-btn" onClick={toggleMenu}>
+                    ☰
+                </button>
+                <ul className={`navbar-links ${isMenuOpen ? 'active' : ''}`}>
+                    <li><Link to="/" id="home-link">Home</Link></li>
+                    <li><Link to="/about">About Us</Link></li>
+                    <div className={`dropdown ${activeDropdown === 0 ? 'active' : ''}`}>
+                        <li>
+                            <Link 
+                                to="#" 
+                                className="dropdown-toggle"
+                                onClick={(e) => {
+                                    e.preventDefault();
+                                    toggleDropdown(0);
+                                }}
+                            >
+                                Events
+                            </Link>
+                        </li>
+                        <div className="dropdown-content">
+                            <li><Link to="#">Upcoming Events</Link></li>
+                            <li><Link to="#">Past Events</Link></li>
+                            <li><Link to="#">Special Programs</Link></li>
+                        </div>
+                    </div>
+                    <li><Link to="/schedule">Our Schedule</Link></li>
+                    <li><Link to="/commissions">Commissions</Link></li>
+                    <li><button className="support-btn">Support Us</button></li>
+                </ul>
+            </div>
         </nav>
     );
 }
